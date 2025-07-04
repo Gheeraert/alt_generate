@@ -2,6 +2,9 @@
 
 Ce script Python permet de générer automatiquement des **descriptions alternatives (balises `alt`)** en français pour un lot d’images (couvertures, illustrations, figures, etc.), afin de respecter les exigences du **RGAA** (Référentiel Général d'Amélioration de l'Accessibilité).
 
+- Réalisé pour répondre à des besoins spécifiques des Presses universitaires de Rouen et du Havre (PURH)
+- Licence MIT
+
 Il utilise :
 - Le modèle **BLIP** (Salesforce) pour analyser l’image,
 - La **traduction automatique** via [deep-translator](https://pypi.org/project/deep-translator/) (Google Translate),
