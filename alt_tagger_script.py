@@ -55,8 +55,10 @@ for i, filename in enumerate(fichiers, 1):
         print(f"[{i}] {filename}")
         alt_en = generate_alt_text_en(path)
         alt_fr = translate_to_french(alt_en)
+        # alt_fr_tronque inutilisé (incertitude si RGAA limite à 150 caractères)
         alt_fr_tronque = truncate_rgaa(alt_fr)
-        results.append((filename, alt_fr_tronque))
+        # alt_fr à remplacer par alt_fr_tronque si on veut tronquer à 150 caractères)
+        results.append((filename, alt_fr))
     else:
         print(f"[{i}] Ignoré : {filename}")
 
