@@ -9,7 +9,7 @@ Il utilise :
 - Le modèle **BLIP** (Salesforce) pour analyser l’image,
 - La **traduction automatique** via [deep-translator](https://pypi.org/project/deep-translator/) (Google Translate),
 - Une interface simple avec **boîte de dialogue** pour choisir le dossier,
-- Une **limite automatique à 150 caractères** pour conformité RGAA,
+- Présence dans le code d'une fonction de **limite automatique à 256 caractères** pour conformité RGAA (fonction désactivée pour l'instant en raison des incertitudes de la RGAA sur ce point)
 - Un **CSV exporté** avec les textes alternatifs,
 - Un **aperçu HTML visuel** des images et de leurs balises ALT.
 
