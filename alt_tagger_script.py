@@ -39,7 +39,7 @@ def translate_to_french(text):
 
 # === Coupe propre à 150 caractères max ===
 # DESACTIVEE POUR L'INSTANT
-def truncate_rgaa(text, limit=150):
+def truncate_rgaa(text, limit=256):
     if len(text) <= limit:
         return text
     return text[:limit].rsplit(' ', 1)[0].rstrip('.,;:!?') + "…"
